@@ -91,8 +91,8 @@ DATABASES = {
         'NAME': 'eromskcDB',
         'USER': 'eroms',
         'PASSWORD': 'Eromosele5',
-        'HOST': 'database-1.cv0wwhuhfji4.us-east-1.rds.amazonaws.com',
-        'PORT': '5432',
+        'HOST': 'database-kc.csxv7js8hwqn.us-east-1.rds.amazonaws.com',
+        'PORT': '5435',
     }
 }
 

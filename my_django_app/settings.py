@@ -25,8 +25,7 @@ SECRET_KEY = 'ty^z-p+#ga=xeh@!t)xwbht75mha&8xshpokx(xi)^$!z4@)bw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-# ALLOWED_HOSTS =  ['localhost', '127.0.0.1']
-ALLOWED_HOSTS =  ['http://devopsproject-env.eba-z83wdj9u.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS =  ['devopsproject-env.eba-z83wdj9u.us-east-1.elasticbeanstalk.com']
 
 
 # Application definition
@@ -72,16 +71,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'my_django_app.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-
-# DATABASES = {
-    # 'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-    # }
-# }
-
 
 DATABASES = {
 
@@ -95,20 +84,6 @@ DATABASES = {
         'PORT': '5435',
     }
 }
-
-
-
-# if 'RDS_HOSTNAME' in os.environ:
-    # DATABASES = {
-        # 'default': {
-            # 'ENGINE': 'django.db.backends.postgresql',
-            # 'NAME': os.environ['RDS_DB_NAME'],
-            # 'USER': os.environ['RDS_USERNAME'],
-            # 'PASSWORD': os.environ['RDS_PASSWORD'],
-            # 'HOST': os.environ['RDS_HOSTNAME'],
-            # 'PORT': os.environ['RDS_PORT'],
-        # }
-    # }
 
 
 # Password validation

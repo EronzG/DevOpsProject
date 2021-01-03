@@ -71,19 +71,28 @@ TEMPLATES = [
 WSGI_APPLICATION = 'my_django_app.wsgi.application'
 
 
+# Database
+# https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-
     'default': {
-        
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'eromskcDB',
-        'USER': 'eroms',
-        'PASSWORD': 'Eromosele5',
-        'HOST': 'database-kc.csxv7js8hwqn.us-east-1.rds.amazonaws.com',
-        'PORT': '5435',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+
+#     'default': {
+        
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'eromskcDB',
+#         'USER': 'eroms',
+#         'PASSWORD': 'Eromosele5',
+#         'HOST': 'database-kc.csxv7js8hwqn.us-east-1.rds.amazonaws.com',
+#         'PORT': '5435',
+#     }
+# }
 
 
 # Password validation

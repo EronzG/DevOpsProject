@@ -25,8 +25,8 @@ SECRET_KEY = 'ty^z-p+#ga=xeh@!t)xwbht75mha&8xshpokx(xi)^$!z4@)bw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-# ALLOWED_HOSTS =  ['devopsproject-env.eba-z83wdj9u.us-east-1.elasticbeanstalk.com']
-ALLOWED_HOSTS =  ['*']
+ALLOWED_HOSTS =  ['devopsproject-env.eba-z83wdj9u.us-east-1.elasticbeanstalk.com']
+# ALLOWED_HOSTS =  ['*']
 
 
 # Application definition
@@ -75,26 +75,26 @@ WSGI_APPLICATION = 'my_django_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+    # 'default': {
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+    # }
+# }
+
+
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'eromsdb',
+        'USER': 'eroms',
+        'PASSWORD': 'Eromosele5',
+        'HOST': 'devopsdb.c4dn66dwaua5.us-east-1.rds.amazonaws.com',
+        'PORT': '5432',
     }
 }
-
-
-# DATABASES = {
-
-#     'default': {
-        
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'eromskcDB',
-#         'USER': 'eroms',
-#         'PASSWORD': 'Eromosele5',
-#         'HOST': 'database-kc.csxv7js8hwqn.us-east-1.rds.amazonaws.com',
-#         'PORT': '5435',
-#     }
-# }
 
 
 # Password validation
